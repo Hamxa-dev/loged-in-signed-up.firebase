@@ -10,7 +10,7 @@ onAuthStateChanged(auth, (user) => {
     console.log(uid);
    
   } else {
-   window.location= "index.html"
+    window.location= "index(login).html"
   }
 });
 
@@ -19,7 +19,7 @@ const button = document.querySelector(".LogOutBtn");
 button.addEventListener('click' , ()=>{
   signOut(auth).then(() => {
       console.log('logout');
-      window.location = 'index.html'
+      window.location= "index(login).html"
     }).catch((error) => {
       console.log(error);
     });

@@ -12,14 +12,14 @@
   .then((userCredential) => {
       const user = userCredential.user;
       console.log(user);
+      window.location = 'HomePage.html'
       Swal.fire({
         position: "top-center",
         icon: "success",
-        title: "Your successfully login",
+        title: "Your successfully signed up",
         showConfirmButton: false,
         timer: 1500,
       });
-        window.location = 'HomePage.html'
   })
   .catch((error) => {
   
