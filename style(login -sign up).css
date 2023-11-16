@@ -70,7 +70,7 @@ button:hover {
 
 .discription{
     margin-top: 7%;
-    padding-left: 2%;
+    padding-left: 3%;
 }
 
 .main-div{
@@ -78,5 +78,34 @@ button:hover {
 }
 
 .LogOutBtn{
-    width: 100%;
+    width: 10%;
+   margin-left: 88%;
 }
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .username {
+    margin: 0; 
+  }
+
+  h1 {
+    margin: 0; 
+  }
+
+
+
+
+
+
+
+
+
+
+
+  /* whats app *
+  /
