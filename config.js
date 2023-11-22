@@ -18,8 +18,7 @@ const firebaseConfig = {
 export const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);
 export const db = getFirestore(app);
-<<<<<<< HEAD
 export { collection, addDoc, getDocs, query, where  };
-=======
-export { collection, addDoc, getDocs, query, where  };
->>>>>>> 804d206d270f762d573319765258189da6610f27
+
+
+
