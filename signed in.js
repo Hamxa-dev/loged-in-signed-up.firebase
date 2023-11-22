@@ -6,13 +6,14 @@
   const password = document.querySelector("#loginPassword");
   const form = document.querySelector(".form");
   
+  
   form.addEventListener("submit", (event) => {
     event.preventDefault();
     signInWithEmailAndPassword(auth, email.value, password.value)
   .then((userCredential) => {
       const user = userCredential.user;
       console.log(user);
-      window.location = 'HomePage.html'
+      
       Swal.fire({
         position: "top-center",
         icon: "success",
@@ -20,6 +21,11 @@
         showConfirmButton: false,
         timer: 1500,
       });
+      
+       // Delay the redirection to the login page for 1 seconds
+      setTimeout(() => {
+        window.location = 'HomePage.html'
+      }, 1000);
   })
   .catch((error) => {
   
